@@ -1,0 +1,15 @@
+<style>
+p {
+    background-color: #C2F670;
+    height: 250px;
+    width: 250px;
+  }
+p.one{border: double black medium; }
+p.two{overflow: scroll; }
+p.three{padding: 2em; }
+p.four{padding: 2em 2em 2em 2em; border: 4px solid red; }
+p.five{margin: 2em; border: 4px solid; border-color: red; }
+p.six{padding: 1em; padding-left: 6em; border: 4px dashed; margin: 1em 6em; }
+p.seven{padding: 1em 50px; border: 2px solid teal; margin: 0 auto; }
+ 
+</style>
