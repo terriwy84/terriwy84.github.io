@@ -4,18 +4,76 @@
 	<meta charset="utf-8">
 	<title>Float Example</title>
 	<style>
-	body {
+		body {
 		background-image:url("star-space-tile.jpg");
-		 }
-	h1 {
-    text-align: center;
-	color: white;
-	font-size: 40px;
-		}
+		color: #fff;
+	}
+	a { 
+		color: #fff;
+	}
+	header h1 {
+		text-align: center;
+	}
+	nav ul {
+		text-align: center;
+	}
+    nav ul li { 
+		display: inline-block; 
+		padding: 20px; 
+	}
+	nav a { 
+		color: black; 
+		background-color: #fff;
+		padding: 5px;
+		border-radius: 5px;
+    	text-decoration: none;
+	}
+	section > div { 
+		border: 1px solid red; 
+		overflow: hidden;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	section > div:nth-child(2) div.photo {
+		float: right;
+	}
+
+	div.photo { 
+		float: left;
+		margin-right: 10px;
+	}
+
+	div.photo img {
+		max-height: 300px;
+	}
+	div.thumbs img {
+		max-height: 50px;
+	}
+
+	.thumbs li {
+		list-style-type: none;
+		float: left;
+	}
+
+
+   
 	
-		
-		.photo img { height: 300px; margin-right: 8px; }
+	/*
+	img {
+    float: left;
+    border: 1px black;
+    margin: 0px 0px 15px 20px;
+	}
+	.thumbs {float: right;
+	border: 2px black;
+	margin 2px, 2px, 2px, 2px;
+	}
+	
+	.photo img { height: 300px; margin-right: 8px; }
 		.thumbs li img { height: 80px; border-radius: 5px;}
+	*/
 	</style>
 </head>
 <body>
@@ -30,7 +88,7 @@
 		</nav>
 	</header>
 	<section class="body">
-		<div class="droid">
+		<div class="droid1">
 			<div class="photo"><img src="r2-d2.jpg" /></div>
 			<div class="desc">
 				<h2>R2-D2</h2>
@@ -47,7 +105,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="droid">
+		<div class="droid2">
 			<div class="photo"><img src="bb-8.jpg" /></div>
 			<div class="desc">
 				<h2>BB-8</h2>
@@ -64,7 +122,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="droid">
+		<div class="droid3">
 			<div class="photo"><img src="r5-d4.jpg" /></div>
 			<div class="desc">
 				<h2>R5-D4</h2>
