@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
   <meta charset="utf-8">
 	<title>index2.html</title>
 	<style>
+	
 	body {
   margin: 0;
   padding: 0 0 1em 0;
@@ -13,11 +15,11 @@
   font-family: Arial;
   background-color: #ededed;
 }
-
-body.rtl {
-  direction: rtl;
-}
-
+		header {
+		font-size: 40px;
+		font-family: monospace;
+		color: black;
+		}
 body.rtl code {
   display: inline-block;
   direction: ltr;
@@ -25,16 +27,6 @@ body.rtl code {
 
 body.rtl pre code {
   display: block;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
 }
 
 p {
@@ -67,82 +59,9 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
-  color: #D64078;
-}
-
 a:hover {
   text-decoration: underline;
 }
-
-a:active {
-  background-color: black;
-  color: white;
-}
-
-#menu {
-  background-color: whiteSmoke;
-  text-align: center;
-}
-
-#menu a {
-  color: #8F8F8F;
-  display: inline-block;
-  padding: .5em 1em;
-  text-shadow: 0 1px 0 #EDEDED;
-  text-decoration: none;
-}
-
-#menu a:hover {
-  background: rgb(220, 220, 220);
-}
-
-#menu .home-link {
-  margin-right: 1em;
-}
-
-#logo {
-  text-align: center;
-  background-color: #ededed;
-  padding: 1em 0;
-}
-
-#logo a {
-  text-decoration: none;
-  color: #414142;
-  position: relative;
-}
-
-#logo a:active {
-  background: none;
-}
-
-#logo img {
-  vertical-align: middle;
-}
-
-#logo span {
-  vertical-align: middle;
-  font-size: 2em;
-  font-family: 'Bree Serif', serif;
-  margin-left: .2em;
-}
-
-#translations {
-  text-align: center;
-  max-width: 400px;
-  margin: 0 auto 1em;
-}
-
-#translations span {
-  margin: 0 .2em;
-  white-space: nowrap;
-}
-
-#translator {
-  text-align: center;
-}
-
 #container {
   padding: 1em;
   margin: 0 0 1em 0;
@@ -150,7 +69,7 @@ a:active {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 400px;
   margin: 1em auto;
 }
 
@@ -162,24 +81,10 @@ h1.content {
   color: #734161;
   background-color: #eee;
 }
-
-.highlight {
-  margin: 2em auto;
-  max-width: 600px;
-  line-height: 1.2em;
-  font-size: 16px;
-  direction: ltr;
-}
-
 .language-css, .language-html {
   display: block;
   text-shadow: 1px 1px 0 black;
   background-color: #333333;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#000000)); /* Safari 4+, Chrome */
-  background-image: -webkit-linear-gradient(top, #333333, #000000); /* Chrome 10+, Safari 5.1+, iOS 5+ */
-  background-image:    -moz-linear-gradient(top, #333333, #000000); /* Firefox 3.6-15 */
-  background-image:      -o-linear-gradient(top, #333333, #000000); /* Opera 11.10-12.00 */
-  background-image:         linear-gradient(to bottom, #333333, #000000); /* Firefox 16+, IE10, Opera 12.50+ */
   color: white;
   padding: 1em;
   border-color: rgba(255, 255, 255, 0.3);
@@ -188,23 +93,6 @@ h1.content {
   border-radius: 10px;
   white-space: pre;
 }
-
-.language-html:before {
-  content: "html";
-  float: right;
-  color: black;
-  text-shadow: -1px 1px 0 #666; /* \m/ */
-  font-size: 1.5em;
-}
-
-.language-css:before {
-  content: "css";
-  float: right;
-  color: black;
-  text-shadow: -1px 1px 0 #666; /* \m/ */
-  font-size: 1.5em;
-}
-
 .elem {
   border: solid  #6AC5AC 3px;
   position: relative;
@@ -213,62 +101,13 @@ h1.content {
 .elem p {
   padding: 0 1em;
 }
-
-.elem-inline .label, .elem-inline .endlabel {
-  position: static;
+nav ul {
+  float: right;
+  width: 200px;
 }
-
-.label, .endlabel {
-  position: absolute;
-  background-color: #6AC5AC;
-  color: #414142;
-  line-height: 1em;
+section {
+  margin-right: 200px;
 }
-
-.label {
-  top: 0;
-  left: 0;
-  padding: 0 3px 3px 0;
-}
-
-.endlabel {
-  right: 0;
-  bottom: 0;
-  padding: 3px 0 0 3px;
-}
-
-.elem-green {
-  border: solid #FDC72F 3px;
-}
-.elem-green > .label, .elem-green > .endlabel{
-  background-color: #FDC72F;
-}
-
-.elem-red {
-  border: solid #D64078 3px;
-}
-.elem-red > .label, .elem-red > .endlabel{
-  color: white;
-  background-color: #D64078;
-}
-
-.elem-orange {
-  border: solid #96C02E 3px;
-}
-.elem-orange > .label, .elem-orange > .endlabel{
-  background-color: #96C02E;
-}
-
-a.nav:before {
-  height: 5px;
-  width: 100%;
-  background: white;
-  position: absolute;
-  content: "";
-  top: -6px;
-  left: 0;
-}
-
 a.nav {
   background-color: #d64078;
   color: white;
@@ -282,20 +121,7 @@ a.nav {
   border: solid #b03060 1px;
   border-bottom: solid #b03060 4px;
   text-shadow: 0px 2px 0 #b03060;
-  -webkit-transition: all 0.1s ease-out;  /* Safari 3.2+, Chrome */
-     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
-       -o-transition: all 0.1s ease-out;  /* Opera 10.5–12.00 */
-          transition: all 0.1s ease-out;  /* Firefox 16+, Opera 12.50+ */
 }
-
-a.nav.prev {
-    margin-left: 0;
-}
-
-a.nav.next {
-    margin-right: 0;
-}
-
 a.nav:hover {
   background-color: #c63b6f;
 }
@@ -303,10 +129,6 @@ a.nav:hover {
 a.nav:active {
   border-bottom: solid #b03060 1px;
   top: 4px;
-  -webkit-transition: all 0 ease-out;  /* Safari 3.2+, Chrome */
-     -moz-transition: all 0 ease-out;  /* Firefox 4-15 */
-       -o-transition: all 0 ease-out;  /* Opera 10.5–12.00 */
-          transition: all 0 ease-out;  /* Firefox 16+, Opera 12.50+ */
 }
 
 .nav-wrapper {
@@ -329,97 +151,10 @@ a.nav:active {
 footer {
   text-align: center;
 }
-
-#share {
-  z-index: -9999;
-  margin: 0 auto;
-  width: 390px;
-  text-align: center;
-  overflow: hidden;
-}
-
-#share li {
-  margin: 0;
-  list-style: none;
-  float: left;
-}
-
-#share #license {
-  
-}
-
-#advertisements {
-  clear: both;
-  margin: 0 auto;
-  width: 370px;
-  text-align: center;
-}
-
-#advertisements span {
-  font-size: 10px;
-  font-style: italic;
-  margin: 0;
-}
-
-#advertisements div {
-  font-size: 13px;
-  text-align: left;
-}
-
-
-@media screen and (min-width:601px) {
-
-  #menu {
-    position: absolute;
-    top: -16px;
-    left: -20px;
-    width: 250px;
-    padding-top: 2em;
-    -webkit-transform-origin: 0 0;
-       -moz-transform-origin: 0 0;
-        -ms-transform-origin: 0 0;
-         -o-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-35deg) translate(-92px, 22px);  /* Safari 3.1+, Chrome */
-       -moz-transform: rotate(-35deg) translate(-92px, 22px);  /* Firefox 3.5-15 */
-        -ms-transform: rotate(-35deg) translate(-92px, 22px);  /* IE9+ */
-         -o-transform: rotate(-35deg) translate(-92px, 22px);  /* Opera 10.5-12.00 */
-            transform: rotate(-35deg) translate(-92px, 22px);  /* Firefox 16+, Opera 12.50+ */
-  }
-
-  .rtl #menu {
-    position: absolute;
-    top: -16px;
-    left: auto;
-    right: -20px;
-    width: 250px;
-    padding-top: 2em;
-    -webkit-transform-origin: 0 0;
-       -moz-transform-origin: 0 0;
-        -ms-transform-origin: 0 0;
-         -o-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(35deg) translate(62px, -129px);  /* Safari 3.1+, Chrome */
-       -moz-transform: rotate(35deg) translate(62px, -129px);  /* Firefox 3.5-15 */
-        -ms-transform: rotate(35deg) translate(62px, -129px);  /* IE9+ */
-         -o-transform: rotate(35deg) translate(62px, -129px);  /* Opera 10.5-12.00 */
-            transform: rotate(35deg) translate(62px, -129px);  /* Firefox 16+, Opera 12.50+ */
-  }
-
-  #menu a {
+	#menu a {
     display: block;
     padding: .2em 0;
-  }
-
-}
-
-@media screen and (max-width:600px) {
-
-  #logo img {
-    width: 15%;
-  }
-
-}
+	}
 
 @media screen and (max-width:404px) { 
 
@@ -431,16 +166,11 @@ footer {
   h1, #logo span {
     font-size: 1.5em;
   }
-
-}
-
 	</style>
 	<body>
-	<div class="clearfix elem">
-  <span class="label">&lt;div class="clearfix"></span>
-	 <nav class="elem elem-red">
-    <span class="label">&lt;nav></span>
-
+		<div id class="header">Loren Ipsum</div>
+		<div class="clearfix elem">
+<nav>
     <ul>
       <li>
         <a href="float-layout.html">Home</a>
@@ -461,32 +191,33 @@ footer {
         <a href="float-layout.html">Contact</a>
       </li>
     </ul>
-    <span class="endlabel">&lt;/nav></span>
   </nav>
-<header>
- 
-</header>
-<section class="elem elem-green">
-    <span class="label">&lt;section></span>
-    <p>This example works just like the last one. Notice we put a <code>clearfix</code> on the container. It's not needed in this example, but it would be if the <code>nav</code> was longer than the non-floated content.</p>
-    <span class="endlabel">&lt;/section></span>
-  </section>
-  <section class="elem elem-green ipsum">
-    <span class="label">&lt;section></span>
+
+  <section class="elem elem-green">
     <p>
+      This example works just like the last one. Notice we put a <code>clearfix</code> on the container. It's not needed in this example, but it would be if the <code>nav</code> was longer than the non-floated content.
+    </p>
+    </section>
+
+  <section class="elem elem-green ipsum">
+     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
     </p>
-    <span class="endlabel">&lt;/section></span>
   </section>
- <footer>
-</div>
+	</div>
 <div class="nav-wrapper">
-	 <a class="nav prev" href="clearfix.html">Previous</a>
-          <a class="nav next" href="percent.html">Next</a>
-          </div>
-</div>
-  </footer>    
-</body>
+<a class="nav prev" href="clearfix.html">Previous</a> 
+ <a class="nav next" href="percent.html">Next</a>
+  </div>
+<footer>
+	<h1><"Recreated by Terri Berg"></h1>
+        </footer>
+      </div>
+	</body>
+</head>
+</html>
+
+   
 
 
     
