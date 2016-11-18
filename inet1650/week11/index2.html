@@ -4,167 +4,36 @@
 	<meta charset="utf-8">
 	<title>index2.html</title>
 	<style>
-	
-	body {
-  margin: 0;
-  padding: 0 0 1em 0;
-  font-size: 1em;
-  line-height: 1.5em;
-  color: #414142;
-  font-family: Arial;
-  background-color: #ededed;
-}
-		header {
-		font-size: 40px;
-		font-family: monospace;
-		color: black;
-		}
-body.rtl code {
-  display: inline-block;
-  direction: ltr;
-}
-
-body.rtl pre code {
-  display: block;
-}
-
-p {
-  margin: 1em 0;
-}
-
-p code, li code {
-  background-color: #ECECEC;
-}
-
-h1, h2 {
-  font-family: 'Bree Serif', serif;
-  font-weight: normal;
-}
-
-h1 {
-  margin: 1.5em 0;
-  font-weight: normal;
-  text-align: center;
-}
-
-h2 {
-  font-family: 'Bree Serif', serif;
-  margin: 1.2em 0;
-  font-weight: normal;
-}
-
-a:link {
-  color: #D64078;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-#container {
-  padding: 1em;
-  margin: 0 0 1em 0;
-  background-color: white;
-}
-
-.content {
-  max-width: 400px;
-  margin: 1em auto;
-}
-
-h1.content {
-  margin: .5em auto 1em;
-}
-
-.ipsum {
-  color: #734161;
-  background-color: #eee;
-}
-.language-css, .language-html {
-  display: block;
-  text-shadow: 1px 1px 0 black;
-  background-color: #333333;
-  color: white;
-  padding: 1em;
-  border-color: rgba(255, 255, 255, 0.3);
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 10px;
-  white-space: pre;
-}
-.elem {
-  border: solid  #6AC5AC 3px;
-  position: relative;
-}
-
-.elem p {
-  padding: 0 1em;
-}
-nav ul {
-  float: right;
-  width: 200px;
-}
-section {
-  margin-right: 200px;
-}
-a.nav {
-  background-color: #d64078;
-  color: white;
-  border-radius: .3em;
-  padding: .2em 0;
-  position: relative;
-  margin: 0 1.5em;
-  width: 10em;
-  display: inline-block;
-  text-decoration: none;
-  border: solid #b03060 1px;
-  border-bottom: solid #b03060 4px;
-  text-shadow: 0px 2px 0 #b03060;
-}
-a.nav:hover {
-  background-color: #c63b6f;
-}
-
-a.nav:active {
-  border-bottom: solid #b03060 1px;
-  top: 4px;
-}
-
-.nav-wrapper {
-  text-align: center;
-  padding: 1em 0;
-  clear: both;
-}
-
-.prev {
-  left: 1em;
-  background-color: gray;
-  text-shadow: 2px 2px 0 gray;
-  border: none;
-}
-
-.next {
-  right: 1em;
-}
-
-footer {
-  text-align: center;
-}
-	#menu a {
-    display: block;
-    padding: .2em 0;
-	}
-
-@media screen and (max-width:404px) { 
-
-  a.nav {
-		float: right;
-    width: 40%;
-  }
-
-  h1, #logo span {
-    font-size: 1.5em;
-  }
+	.clearfix {position: relative;
+            border: green solid 3px;
+          margin-top: 200px;}
+nav {width:195px;
+     border: pink solid 3px;
+     float: right;}
+ nav ul li a {color: pink;
+              text-decoration: none;}
+ section {margin-right: 200px;
+          border: gold solid 3px;
+        padding-left: 10px;}
+.two {background-color:lightgray;}
+footer {position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        border: lightgreen solid 3px;}
+header {position: fixed;
+        top: 0;
+        left:0;
+        height: 70px;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        border: lightgreen solid 3px;}
+body {margin-bottom: 120px;}
+mark {background-color: lightgray;}
 	</style>
 	<body>
 		<div id="header"><h1>Loren Ipsum</h1></div>
