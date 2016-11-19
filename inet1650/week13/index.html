@@ -41,11 +41,21 @@
 		td { text-align: center; }
 
 		/* Your CSS RULES Below this line */
-<div class="main">
-  
-<div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:0px;margin-bottom:0px;max-height:500px;">
-<!-- START REVOLUTION SLIDER 4.6.5 fullwidth mode -->
-	<div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;max-height:500px;height:500px;">
+@media screen and (max-device-width:900px) and (min-device-width: 500px),
+                  (max-width:900px) and (min-width: 500px) {
+ .team .athlete {width: 45%; height: auto;}
+ .team .athlete img {width: 100%; height:inherit;}
+ tr {font-size: small;}
+ td:first-child {font-weight: bold;}
+ td:nth-child(4) {font-weight: bold;}
+}
+ @media screen and (max-device-width: 500px),
+                   (max-width: 500px) {
+.team .athlete {width: 95%; height: auto;}
+.team .athlete img {width:90%; height: inherit;}
+table, thead, tbody, th, td, tr{display: block;}
+}
+
 		/* Your CSS RULES Above this line */
 
 	</style>
